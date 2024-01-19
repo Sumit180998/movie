@@ -18,13 +18,13 @@ export default function MovieRouter() {
     return (
         <BrowserRouter>
            <Routes>
-           <Route path="/" element={<Home/>}/>
+           <Route path="/movie" element={<Home/>}/>
            <Route path="/Searchpage/:id" element={<Searchpage/>}/>
            <Route path="/MovieDetail/:id" element={<MovieDetail/>}/>
            <Route path="/PeopleDetail/:id" element={<PeopleDetail/>}/>
            <Route path="/Movie/:id" element={<Moviepage/>}/>
            
-                <Route path="/" element={<Navigate replace to="/" />} />
+                <Route path="/" element={<Navigate replace to="/movie" />} />
               
             </Routes>
         </BrowserRouter>
